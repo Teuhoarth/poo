@@ -31,6 +31,10 @@ public class CorridaDeCachorro
         Apostadores.Add(new Apostador(nomeDoApostador));
     }
 
+    public void NumeroDeCorredor(string numeroDeCorredores)
+    {
+        
+    }
 
 
     public void Apostar(Apostador apostador, Corredor corredor, double totalAposta)
