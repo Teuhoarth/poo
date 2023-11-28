@@ -26,14 +26,43 @@ public class CorridaDeCachorro
 
     }
 
+    public CorridaDeCachorro
+    (int numeroDeApostadores = 5,
+     int numeroDeCorredores = 4
+    )
+    {
+        if (numeroDeApostadores < NUMERO_MINIMO_DE_APOSTADORES)
+        {
+            throw new ArgumentException("No minimo é permitido 5 apostadores");
+        }
+
+        if (numeroDeCorredores < NUMERO_MINIMO_DE_CORREDORES)
+        {
+            throw new ArgumentException("No minimo é permitido 4 corredores");
+        }
+
+        Apostadores = new List<Apostador>();
+
+        for (int i = 0; i < numeroDeApostadores; i++)
+        {
+            Apostadores.Add(new Apostador(i));
+        }
+
+        Corredores = new List<Corredor>();
+        for (int i = 0; i < numeroDeCorredores; i++)
+        {
+            Corredores.Add(new Corredor(i));
+        }
+    }
+
     public void AdicionarApostador(string nomeDoApostador)
     {
         Apostadores.Add(new Apostador(nomeDoApostador));
     }
 
-    public void NumeroDeCorredor(string numeroDeCorredores)
+    public void NomeDeCorredor(string nomeDeCorredores)
     {
-        
+        Corredores.Add(new Corredor(nomeDeCorredores));
     }
 
 

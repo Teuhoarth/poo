@@ -12,9 +12,9 @@
 - Ganha a corrida o corredor que chegar em 100 metros primeiro ( ok ) 
 - 
 - Até o terceiro colocado recebe prêmio proporcional ao valor das apostas, 
-- sendo 70%, 
-- 20% e 
-- 10%
+- sendo 70%, (ok)
+- 20% e (ok)
+- 10% (ok)
 - 
 - Todos devem finalizar a corrida
 - Deve mostrar ao finalizar a corrida 

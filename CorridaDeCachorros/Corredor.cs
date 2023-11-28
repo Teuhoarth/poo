@@ -14,6 +14,12 @@ public class Corredor : BaseModel
         _distanciaPercorrida = 0.0;
         Posicao = Posicoes.NaoGanho;
     }
+    public Corredor (string nomeDoCorredor)
+    {
+        Nome = nomeDoCorredor;
+        _distanciaPercorrida = 0.0;
+        Posicao = Posicoes.NaoGanho;
+    }
 
     public virtual void Mover()
     {
