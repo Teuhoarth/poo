@@ -8,6 +8,9 @@ namespace CorridaDeCachorros;
 
 public class Corredor3 : Corredor2
 {
+    public Corredor3(string nomeDeCorredores) : base(nomeDeCorredores)
+    {
+    }
 
     public Corredor3(int posicaoCorredor) : base(posicaoCorredor)
     {

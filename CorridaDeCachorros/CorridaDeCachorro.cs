@@ -60,11 +60,29 @@ public class CorridaDeCachorro
         Apostadores.Add(new Apostador(nomeDoApostador));
     }
 
-    public void NomeDeCorredor(string nomeDeCorredores)
+    public void AdicionarCorredor(string nomeDeCorredores)
     {
-        Corredores.Add(new Corredor(nomeDeCorredores));
-    }
+        if (nomeDeCorredores == nomeDeCorredores)
+        {
+            Corredores.Add(new Corredor(nomeDeCorredores));
 
+        }
+        else if (nomeDeCorredores == nomeDeCorredores )
+        {
+            Corredores.Add(new Corredor2(nomeDeCorredores));
+
+        }
+        else if (nomeDeCorredores == nomeDeCorredores)
+        {
+            Corredores.Add(new Corredor3(nomeDeCorredores));
+
+        }
+        else if (nomeDeCorredores == nomeDeCorredores)
+        {
+            Corredores.Add(new Corredor4(nomeDeCorredores));
+
+        }
+    }
 
     public void Apostar(Apostador apostador, Corredor corredor, double totalAposta)
     {

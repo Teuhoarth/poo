@@ -19,13 +19,13 @@ while (exit != "exit")
     {
         Console.WriteLine("Qual o nome do corredor? ");
         var nomeCorredor = Console.ReadLine();
-        corridaDeCachorros.NomeDeCorredor(nomeCorredor);
+        corridaDeCachorros.AdicionarCorredor(nomeCorredor);
 
-    } else if ( texte == "3")
+    } else if (texte == "3")
     {
         Console.WriteLine("");
     }
     {
         exit = texte;
-    }
+    } 
 } 

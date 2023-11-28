@@ -7,8 +7,14 @@ using System.Threading.Tasks;
 
 namespace CorridaDeCachorros;
 
+
+
 public class Corredor4 : Corredor3
-{   
+{
+    public Corredor4(string nomeDeCorredores) : base(nomeDeCorredores)
+    {
+    }
+
     public Corredor4(int posicaoCorredor) : base(posicaoCorredor)
     {
     }

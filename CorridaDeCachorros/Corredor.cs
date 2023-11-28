@@ -8,13 +8,15 @@ public class Corredor : BaseModel
 
     public Posicoes Posicao { get; set; }
 
+
     public Corredor(int posicaoCorredor) : base()
     {
         Nome = $"Corredor-{posicaoCorredor}";
         _distanciaPercorrida = 0.0;
         Posicao = Posicoes.NaoGanho;
     }
-    public Corredor (string nomeDoCorredor)
+
+    public Corredor(string nomeDoCorredor) 
     {
         Nome = nomeDoCorredor;
         _distanciaPercorrida = 0.0;
